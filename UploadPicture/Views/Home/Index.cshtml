@@ -1,0 +1,16 @@
+﻿@model IEnumerable<UploadPicture.Models.ImageEntity>
+
+@{
+    ViewBag.Title = "Добавление пользователя";
+}
+<form asp-action="AddFile" asp-controller="Home" method="post" enctype="multipart/form-data">
+    <p>
+        <label>Аватар</label>
+        <input type="file" name="file" class="form-control" multiple=""/>
+    </p>
+    <p>
+        <input type="submit" value="Добавить" />
+    </p>
+</form>
+
+
